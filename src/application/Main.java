@@ -23,25 +23,7 @@ public class Main extends Application {
 		stage.show();
 	}
 	
-	@FXML
-	private void nuevapantalla() {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("interfaz2.fxml"));
-		AnchorPane mypane;
-		try {
-			
-			mypane = (AnchorPane) loader.load();
-			stage=new Stage();
-			stage.setTitle("Registro");
-			Scene scene=new Scene(mypane);
-			stage.setScene(scene);
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	
-	}
+
 	public static void main(String[] args) {
 		launch(args);
 	}
