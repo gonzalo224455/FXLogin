@@ -12,20 +12,18 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
 
 <AnchorPane prefHeight="500.0" prefWidth="1000.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Pane id="pane1" fx:id="pane1" prefHeight="499.0" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane id="pane2" fx:id="pane2" prefHeight="499.0" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane id="pane3" fx:id="pane3" prefHeight="499.0" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane id="pane4" fx:id="pane4" prefHeight="499.0" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <MediaView fx:id="mediaView" fitHeight="539.0" fitWidth="1000.0" layoutX="-7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Pane layoutX="736.0" layoutY="71.0" prefHeight="328.0" prefWidth="209.0" style="-fx-background-color: #cfd8ab; -fx-background-radius: 20;">
          <children>
             <VBox alignment="CENTER" prefHeight="294.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@23755.png" />
+                        <Image url="@media/23755.png" />
                      </image>
                   </ImageView>
                   <Label style="-fx-font-size: 25;" text="Inicia Sesión" textFill="#ff7300" />
