@@ -16,10 +16,10 @@ public class Controller {
 	Pane pane4;
 
 	public void initialize() {
-		pane1.setStyle("-fx-background-image: url('..\\media\\1.jpg')");
-		pane2.setStyle("-fx-background-image: url('..\\media\\2.jpg')");
-		pane3.setStyle("-fx-background-image: url('..\\media\\3.jpg')");
-		pane4.setStyle("-fx-background-image: url('..\\media\\4.jpg')");
+		pane1.setStyle("-fx-background-image: url('application/1.jpg')");
+		pane2.setStyle("-fx-background-image: url('application/2.jpg')");
+		pane3.setStyle("-fx-background-image: url('application/3.jpg')");
+		pane4.setStyle("-fx-background-image: url('application/4.jpg')");
 		transicion();
 	}
 
@@ -44,12 +44,20 @@ public class Controller {
 					ft4.setToValue(1);
 					ft4.play();
 					ft4.setOnFinished(event4 -> {
-						FadeTransition ft5 = new FadeTransition(Duration.seconds(3), pane2);
+						FadeTransition ft5 = new FadeTransition(Duration.seconds(3), pane3);
 						ft5.setFromValue(0);
 						ft5.setToValue(1);
 						ft5.play();
 						ft5.setOnFinished(event5 -> {
-							transicion();
+							FadeTransition ft6 = new FadeTransition(Duration.seconds(3), pane4);
+							ft6.setFromValue(0);
+							ft6.setToValue(1);
+							ft6.play();
+							ft6.setOnFinished(event6 -> {
+
+								transicion();
+							});
+
 						});
 					});
 				});
