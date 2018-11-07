@@ -22,10 +22,10 @@ public class Main extends Application {
 		stage.setScene(new Scene(mypane));
 		stage.show();
 	}
+	
 	@FXML
 	private void nuevapantalla() {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("interfaz2.fxml"));
-//		loader.setController(new setBlur());
 		AnchorPane mypane;
 		try {
 			

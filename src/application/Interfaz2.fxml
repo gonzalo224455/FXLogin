@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,7 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="499.0" prefWidth="656.0" style="-fx-background-color: #5D6D7E;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -31,7 +32,11 @@
          <children>
             <VBox alignment="CENTER" prefHeight="348.0" prefWidth="580.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Text fill="#ff8600" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Registrar" textAlignment="CENTER" />
+                  <Label text="Registro" textAlignment="CENTER" textFill="#ff8600">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
                   <JFXTextField focusColor="#002697" labelFloat="true" layoutX="10.0" layoutY="74.0" promptText="Nombre" unFocusColor="#3d02dd">
                      <opaqueInsets>
                         <Insets />
@@ -86,7 +91,7 @@
             </VBox>
             <ImageView fitHeight="72.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Paper_mario.png" />
+                  <Image url="@../../media/Paper_mario.png" />
                </image>
             </ImageView>
          </children>
