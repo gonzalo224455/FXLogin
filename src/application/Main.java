@@ -25,7 +25,6 @@ public class Main extends Application {
 	@FXML
 	private void nuevapantalla() {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("interfaz2.fxml"));
-//		loader.setController(new setBlur());
 		AnchorPane mypane;
 		try {
 			
