@@ -1,2 +1,2 @@
 # FXLogin
-![](/Translation/img/Readme.jpg)
+![](/blob/Translation/img/Readme.JPG)
