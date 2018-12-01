@@ -11,7 +11,6 @@ import javafx.scene.layout.AnchorPane;
 
 public class Main extends Application {
 	
-	private Stage stage;
 	@Override
 
 	public void start(Stage stage) throws IOException {
@@ -22,26 +21,8 @@ public class Main extends Application {
 		stage.setScene(new Scene(mypane));
 		stage.show();
 	}
-	@FXML
-	private void nuevapantalla() {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("interfaz2.fxml"));
-//		loader.setController(new setBlur());
-		AnchorPane mypane;
-		try {
-			
-			mypane = (AnchorPane) loader.load();
-			stage=new Stage();
-			stage.setTitle("Registro");
-			Scene scene=new Scene(mypane);
-			stage.setScene(scene);
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
 	
-	}
+
 	public static void main(String[] args) {
 		launch(args);
 	}
